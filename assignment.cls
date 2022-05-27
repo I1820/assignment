@@ -5,6 +5,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{enumerate}
 \RequirePackage{minted}
+\RequirePackage{enumerate}
 \RequirePackage{graphicx}
 \RequirePackage[useregional,calc,warn=false]{datetime2}
 
@@ -61,6 +62,9 @@
 
 \newcommand{\makefooter}{%
   \vfill
+  \begin{flushleft}
+    موفق و موید باشید
+  \end{flushleft}
   \begin{center}
     این سند برپایه بسته \متن‌لاتین{\زی‌پرشین} گونه \متن‌لاتین{\گونه‌زی‌پرشین} توسعه پیدا کرده است.
     نگارش شده به تاریخ \@date
