@@ -5,6 +5,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{enumerate}
 \RequirePackage{minted}
+\RequirePackage{graphicx}
 \RequirePackage[useregional,calc,warn=false]{datetime2}
 
 \DTMnewdatestyle{mmyy}{%
@@ -39,15 +40,23 @@
 \date{\persiantoday}
 
 \renewcommand{\maketitle}{%
+  \begin{minipage}{.25\textwidth}
+    \centering\includegraphics[width=.5\textwidth]{./img/aut.png}
+  \end{minipage}
+  \begin{minipage}{.5\textwidth}
   \begin{center}
-  \textit{بسمه تعالی}
-  \vfill
-  {\huge تمرین \@title}\\[0.5cm]
-  {\large اینترنت اشیا}\\[0.5cm]
-  {بهار ۱۴۰۱}
-  \vfill
+  \textit{بسمه تعالی}\\
+  {دانشکده مهندسی کامپیوتر دانشگاه صنعتی امیرکبیر (پلی‌تکنیک تهران)}
+  \\
+  {درس مبانی اینترنت اشیا نیمسال دوم ۱۴۰۰ -- ۱۴۰۱}
+  \\
+  {تمرین \@title}
+  \\
   \end{center}
-  \newpage
+  \end{minipage}
+  \begin{minipage}{.25\textwidth}
+    \centering\includegraphics[width=.5\textwidth]{./img/ce.png}
+  \end{minipage}
 }
 
 \newcommand{\makefooter}{%
