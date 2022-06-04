@@ -7,12 +7,6 @@
 \RequirePackage{minted}
 \RequirePackage{enumerate}
 \RequirePackage{graphicx}
-\RequirePackage[useregional,calc,warn=false]{datetime2}
-
-\DTMnewdatestyle{mmyy}{%
-  \renewcommand*{\DTMdisplaydate}[4]{\DTMmonthname{##2} ##1}%
-  \renewcommand*{\DTMDisplaydate}{\DTMdisplaydate}%
-}
 
 \LoadClass[]{article}
 
