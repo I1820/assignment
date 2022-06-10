@@ -2,10 +2,9 @@
               [Parham Alvani's theme for IoT assignments]
 
 \RequirePackage[dvipsnames]{xcolor}
-\RequirePackage{booktabs}
-\RequirePackage{enumerate}
 \RequirePackage{minted}
 \RequirePackage{enumerate}
+\RequirePackage{tagging}
 \RequirePackage{graphicx}
 
 \LoadClass[]{article}
@@ -31,8 +30,28 @@
 
 \eqcommand{تارنما}{href}
 \eqcommand{پایان‌ساز}{makefooter}
+\eqcommand{باتگ}{usetag}
 
 \date{\persiantoday}
+
+\newenvironment{simulation}
+{
+  \taggedblock{شبیه‌سازی}
+}
+{
+  \endtaggedblock
+}
+
+\newenvironment{hardware}
+{
+  \taggedblock{سخت‌افزار}
+}
+{
+  \endtaggedblock
+}
+
+\eqenvironment{شبیه‌سازی}{simulation}
+\eqenvironment{سخت‌افزار}{hardware}
 
 \renewcommand{\maketitle}{%
   \begin{minipage}{.25\textwidth}
